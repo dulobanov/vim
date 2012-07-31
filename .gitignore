@@ -1,14 +1,18 @@
+# add .vim .vimrc
+!.vimrc
+!.vim/
+
+# add gitignore
+!.gitignore
+
 # skip all
 *
 
 
 
-# add gitignore
-!.gitignore
 
-# add .vim .vimrc
-!.vimrc
-!.vim/
+
+
 
 
 
