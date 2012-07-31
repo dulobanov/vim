@@ -15,6 +15,27 @@ set background=dark                     "фон терминала - темны�
 
 
 
+
+
+" ---------------------------------------------------------------
+"			Configure ctags ~/.vim/ctags/ & omni
+" ---------------------------------------------------------------
+" autocomplete for c++
+autocmd FileType c set omnifunc=ccomplete
+
+
+" autocomplete for c++
+autocmd FileType php set omnifunc=phpcomplete
+autocmd FileType xml set omnifunc=xmlcomplete
+autocmd FileType css set omnifunc=csscomplete
+autocmd FileType html set omnifunc=htmlcomplete
+autocmd FileType javascript set omnifunc=javascriptcomplete
+
+" load tags qt
+set tags +=~/.vim/ctags/qt_tags
+
+
+
 " ---------------------------------------------------------------
 "			Preerences
 " ---------------------------------------------------------------
@@ -132,21 +153,23 @@ map <F4> :reg<cr>
 nmap <F7> :set hlsearch!<CR>
 
 " F8 - удаление конечных пробелов
-map <F8> :%s/\s\+$//<cr>
+nmap <F8> :%s/\s\+$//<cr>
+imap <F8> <esc>:%s/\s\+$//<cr>
 
 " F10 - переключаемся между соответствующими *.c и *.h файлами
 " в текущем каталоге (used a.vim)
 imap <F10> <Esc>:AT<CR>
 nmap <F10> :AT<CR>
 
-" F11 - открыть пустую вкладку
-nmap <F11> :tabnew<cr>
-imap <F11> <esc>:tabnew<cr>
 
-" F12 - обозреватель файлов
-map <F12> :Ex<cr>
-vmap <F12> <esc>:Ex<cr>i
-imap <F12> <esc>:Ex<cr>i
+" F11 - обозреватель файлов
+map <F11> :Ex<cr>
+vmap <F11> <esc>:Ex<cr>i
+imap <F11> <esc>:Ex<cr>i
+
+" F12 - открыть пустую вкладку
+nmap <F12> :tabnew<cr>
+imap <F12> <esc>:tabnew<cr>
 
 " < & > - делаем отступы для блоков
 vmap < <gv
