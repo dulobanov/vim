@@ -1,0 +1,14 @@
+let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
+let g:netrw_dirhist_cnt =0
+=======
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/den/develop/qt/stockroom/kernel'
+let g:netrw_dirhist_2='/home/den/develop/qt/stockroom'
+let g:netrw_dirhist_3='/home/den/develop/qt/stockroom/kernel'
+let g:netrw_dirhist_4='/home/den/develop/qt/stockroom'
+let g:netrw_dirhist_5='/home/den/develop/qt/stockroom/kernel'
+let g:netrw_dirhist_6='/home/den/develop/qt/stockroom'
+let g:netrw_dirhist_7='/home/den/develop/qt/stockroom/kernel'
+let g:netrw_dirhist_8='/home/den/develop/qt/stockroom/src'
+>>>>>>> origin/master
